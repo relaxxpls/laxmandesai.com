@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-auto';
-import autoprefixer from 'autoprefixer';
 import sass from 'sass';
 import preprocess from 'svelte-preprocess';
 
@@ -7,9 +6,7 @@ import preprocess from 'svelte-preprocess';
 const config = {
   // ? Reference: https://github.com/sveltejs/svelte-preprocess
   preprocess: preprocess({
-    postcss: {
-      plugins: [autoprefixer],
-    },
+    postcss: true,
     scss: {
       renderSync: true,
       implementation: sass,
