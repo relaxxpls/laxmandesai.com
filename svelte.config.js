@@ -1,11 +1,21 @@
 import adapter from '@sveltejs/adapter-auto';
+import autoprefixer from 'autoprefixer';
+import sass from 'sass';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
-  // for more information about preprocessors
-  preprocess: preprocess(),
+  // ? Reference: https://github.com/sveltejs/svelte-preprocess
+  preprocess: preprocess({
+    postcss: {
+      plugins: [autoprefixer],
+    },
+    scss: {
+      renderSync: true,
+      implementation: sass,
+      prependData: '@use "src/variables.scss" as *;',
+    },
+  }),
 
   kit: {
     adapter: adapter(),
@@ -18,4 +28,3 @@ const config = {
 };
 
 export default config;
-
