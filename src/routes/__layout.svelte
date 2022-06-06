@@ -1,16 +1,18 @@
 <script lang="ts">
   import Footer from '$lib/Footer.svelte';
   import Header from '$lib/Header.svelte';
-  import '../app.scss';
+  import '../app.css';
 </script>
 
-<Header />
+<div class="container mx-auto">
+  <Header />
 
-<main>
-  <slot />
-</main>
+  <main>
+    <slot />
+  </main>
 
-<Footer />
+  <Footer />
+</div>
 
 <style>
   main {

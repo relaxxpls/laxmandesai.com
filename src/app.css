@@ -1,17 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
+
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-mono: 'Fira Mono', monospace;
-  --pure-white: #ffffff;
-  --primary-color: #191627;
-  --secondary-color: #6a87fb;
-  --tertiary-color: #5d0cc7;
-  --accent-color: #6e57e0;
-  --heading-color: #f2f1f3;
-  --text-color: #a19fad;
-  --background-without-opacity: rgba(255, 255, 255, 0.7);
-  --column-width: 42rem;
-  --column-margin-top: 4rem;
+  font-family: Jost, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -22,7 +16,7 @@ body {
   min-height: 100vh;
   height: 200rem;
   margin: 0;
-  background-color: var(--primary-color);
+  background: $primary;
 }
 
 body::before {
@@ -35,23 +29,17 @@ body::before {
   z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    var(--pure-white) 0%,
+    #ffffff 0%,
     rgba(255, 255, 255, 0) 100%
   );
   opacity: 0.05;
-}
-
-#svelte {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 h1,
 h2,
 p {
   font-weight: 400;
-  color: var(--heading-color);
+  color: $heading;
 }
 
 p {
@@ -59,7 +47,7 @@ p {
 }
 
 a {
-  color: var(--accent-color);
+  color: $accent;
   text-decoration: none;
 }
 
@@ -84,7 +72,7 @@ pre {
   box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
   padding: 0.5em;
   overflow-x: auto;
-  color: var(--text-color);
+  color: $text;
 }
 
 input,
@@ -102,4 +90,3 @@ button:focus:not(:focus-visible) {
     font-size: 2.4rem;
   }
 }
-
