@@ -10,6 +10,7 @@
 <svelte:head>
   <title>Laxman Desai</title>
   <meta name="description" content="Laxman's Portfolio" />
+  <!-- <link rel="stylesheet" href="/styles.css" /> -->
 </svelte:head>
 
 <section id="home">
@@ -20,9 +21,9 @@
           <a
             href={social.link}
             target="_blank"
-            class="text-2xl text-indigo-500 transition hover:text-indigo-300"
+            class="text-indigo-500 transition hover:text-indigo-300"
           >
-            <Icon name={social.icon} size="30" strokeWidth="1.5" />
+            <Icon name={social.icon} strokeWidth="1.5" class="w-6 h-6 sm:w-8 sm:h-8" />
           </a>
         {/each}
       </div>
@@ -50,12 +51,12 @@
 
       <div class="col-start-1 col-end-3 text-gray-300 sm:col-auto">
         <h1
-          class="mb-3 bg-gradient-to-tr from-indigo-400 to-violet-600 bg-clip-text text-7xl font-bold text-transparent"
+          class="mb-3 bg-gradient-to-tr from-indigo-500 to-indigo-700 bg-clip-text text-7xl font-bold text-transparent"
         >
           Hi, I am Laxman
         </h1>
-        <h3 class="mb-3 font-mono text-lg font-normal text-gray-300">
-          Developer
+        <h3 class="mb-3 font-mono text-lg font-normal text-white">
+          Student // Developer
         </h3>
         <p class="mb-8">
           High level experience in web design and development knowledge,

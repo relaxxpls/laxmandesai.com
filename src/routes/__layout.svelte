@@ -4,10 +4,10 @@
   import '../app.css';
 </script>
 
-<div class="relative min-h-screen">
+<div class="flex min-h-screen flex-col">
   <Header />
 
-  <main class="max-w-[1024px]">
+  <main class="container flex-grow">
     <slot />
   </main>
 

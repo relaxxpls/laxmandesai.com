@@ -3,7 +3,7 @@
   import routes from '../data/routes.json';
 </script>
 
-<header class="container sticky inset-0 z-10 mx-auto  p-3 sm:p-4">
+<header class="container sticky top-0 z-10 py-3 sm:py-4">
   <nav
     class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl border-2 border-white/10 bg-midnight/40 backdrop-blur-3xl sm:flex-row sm:justify-between sm:px-8"
   >

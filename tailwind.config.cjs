@@ -2,6 +2,19 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '0.75rem',
+        sm: '1rem',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+      },
+    },
+
     extend: {
       colors: {
         midnight: {
