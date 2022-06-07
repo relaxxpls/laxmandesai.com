@@ -5,6 +5,8 @@
   export let strokeWidth: string | number = 1;
   export let stroke: string = 'currentColor';
   export let size: string | number = 24;
+  let _class: string = '';
+  export { _class as class };
 
   $: icon = feather.icons[name];
   $: if (icon) {
@@ -14,7 +16,7 @@
 </script>
 
 {#if icon}
-  <svg {...icon.attrs} width={size} height={size}>
+  <svg {...icon.attrs} width={size} height={size} class={_class}>
     <g>
       {@html icon.contents}
     </g>

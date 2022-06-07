@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-auto';
-import sass from 'sass';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -7,11 +6,6 @@ const config = {
   // ? Reference: https://github.com/sveltejs/svelte-preprocess
   preprocess: preprocess({
     postcss: true,
-    scss: {
-      renderSync: true,
-      implementation: sass,
-      prependData: '@use "src/variables.scss" as *;',
-    },
   }),
 
   kit: {

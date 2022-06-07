@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "GitHub",
+    "icon": "github",
+    "link": "https://github.com/relaxxpls"
+  },
+  {
+    "id": 2,
+    "title": "Twitter",
+    "icon": "twitter",
+    "link": "https://twitter.com/relaxxplss"
+  },
+  {
+    "id": 3,
+    "title": "LinkedIn",
+    "icon": "linkedin",
+    "link": "https://www.linkedin.com/in/laxmandesai"
+  },
+  {
+    "id": 4,
+    "title": "Instagram",
+    "icon": "instagram",
+    "link": "https://www.instagram.com/relaxxpls"
+  }
+]
