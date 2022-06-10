@@ -15,8 +15,8 @@
 </script>
 
 <svelte:head>
-  <title>About - Laxman Desai</title>
-  <meta name="description" content="About Laxman Desai" />
+  <title>Projects - Laxman Desai</title>
+  <meta name="description" content="Projects built by Laxman Desai" />
 </svelte:head>
 
 <section class="flex w-full items-center justify-center">
