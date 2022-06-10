@@ -27,7 +27,7 @@
       </a>
       and
       <a
-        href="https://kit.svelte.dev"
+        href="https://tailwindcss.com"
         class="font-semibold hover:text-indigo-300 hover:underline"
       >
         TailwindCSS
