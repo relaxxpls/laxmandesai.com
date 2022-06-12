@@ -7,12 +7,11 @@
     "type": "git",
     "url": "https://github.com/relaxxpls/laxmandesai.com.git"
   },
-  "author": "Laxman Desai <lolopaw24@gmail.com>",
+  "author": "Laxman Desai <desai.laxman2001@gmail.com>",
   "homepage": "https://relaxxpls.github.io/laxmandesai.com",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "deploy": "gh-pages -d build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
@@ -26,7 +25,6 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@types/feather-icons": "^4.7.0",
     "@types/tailwindcss": "^3.0.10",
@@ -37,7 +35,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "eslint-plugin-tailwindcss": "^3.5.2",
-    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.11",
