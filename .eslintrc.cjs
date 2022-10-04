@@ -5,7 +5,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'plugin:tailwindcss/recommended',
   ],
   plugins: ['svelte3', '@typescript-eslint', 'tailwindcss'],
   ignorePatterns: ['*.cjs'],
