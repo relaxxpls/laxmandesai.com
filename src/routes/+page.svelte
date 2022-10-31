@@ -9,7 +9,10 @@
 
 <svelte:head>
   <title>Laxman Desai</title>
-  <meta name="description" content="Laxman Desai - Home" />
+  <meta
+    name="description"
+    content="Laxman Desai is the CoFounder of Infini3. At 21 years old, he's a self-taught 'god level' coder from Goa, India. Currently in his final year pursuing a BTech at the Indian Institute of Technology Bombay, Laxman is an avid traveller and coffee connisseur."
+  />
 </svelte:head>
 
 <section
@@ -52,22 +55,38 @@
 
   <div class="text-white">
     <h1
-      class="mb-3 bg-gradient-to-tr from-indigo-500 to-indigo-700 bg-clip-text text-6xl font-bold text-transparent sm:text-7xl"
+      class="mb-3 bg-gradient-to-tr from-indigo-400 to-indigo-700 bg-clip-text text-6xl font-bold text-transparent sm:text-7xl"
     >
       Hi, I am Laxman
     </h1>
-    <h3 class="mb-3 font-mono text-lg font-normal">Student // Developer</h3>
-    <p class="mb-8 text-gray-300">
-      High level experience in web design and development knowledge, producing
-      quality work.
+    <h3 class="mb-3 font-mono text-lg font-normal">
+      CoFounder- Infini3 // Student + Buidler
+    </h3>
+    <p class="mb-8 text-gray-400">
+      Laxman Desai is the CoFounder of
+      <a
+        href="https://www.infini3.xyz?ref=lax"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Infini3
+      </a>. At 21 years old, he's a self-taught "god level" coder from Goa,
+      India. Currently in his final year pursuing a BTech at IIT Bombay, Laxman
+      is an avid traveller and a coffee connisseur.
     </p>
 
     <a
       href="/contact"
-      class="inline-flex items-center rounded-lg bg-indigo-500 p-4 hover:bg-indigo-600"
+      class="inline-flex items-center gap-2 rounded-lg bg-indigo-500 p-4 hover:bg-indigo-600"
     >
-      Hire Me
-      <Icon name="message-circle" size="20" strokeWidth="2" class="ml-2" />
+      Get in touch
+      <Icon name="message-circle" size="18" strokeWidth="2" />
     </a>
   </div>
 </section>
+
+<style>
+  #mask0 {
+    mask-type: alpha;
+  }
+</style>
