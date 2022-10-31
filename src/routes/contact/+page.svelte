@@ -1,5 +1,5 @@
 <script context="module">
-  import { browser, dev } from '$app/env';
+  import { browser, dev } from '$app/environment';
 
   // we don't need any JS on this page, though we'll load
   // it in dev so that we get hot module replacement...
@@ -15,8 +15,8 @@
 </script>
 
 <svelte:head>
-  <title>About - Laxman Desai</title>
-  <meta name="description" content="About Laxman Desai" />
+  <title>Contact - Laxman Desai</title>
+  <meta name="description" content="Contact Laxman Desai" />
 </svelte:head>
 
 <section class="flex w-full items-center justify-center">
