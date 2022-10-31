@@ -1,6 +1,6 @@
 {
   "name": "laxmandesai-com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "private": true,
   "repository": {
@@ -10,15 +10,13 @@
   "author": "Laxman Desai <desai.laxman2001@gmail.com>",
   "homepage": "https://relaxxpls.github.io/laxmandesai.com",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
   },
   "dependencies": {
     "feather-icons": "^4.29.0"
@@ -26,20 +24,24 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/cookie": "^0.5.1",
     "@types/feather-icons": "^4.7.0",
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "svelte": "^3.52.0",
     "svelte-check": "^2.9.2",
     "svelte-preprocess": "^4.10.7",
     "tailwindcss": "^3.2.1",
-    "typescript": "^4.8.4"
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.2"
   }
 }
